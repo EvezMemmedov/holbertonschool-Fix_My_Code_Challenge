@@ -8,7 +8,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	tmp = *head;
 
-	/* 0-cı indeks */
+	/* index 0 */
 	if (index == 0)
 	{
 		*head = tmp->next;
@@ -18,7 +18,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
-	/* digərləri */
 	while (tmp && i < index)
 	{
 		tmp = tmp->next;
